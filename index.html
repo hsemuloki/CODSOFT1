@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Header with Toggle</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="header">
+    <div class="left-section">
+      <img src="image.png" alt="Logo" />
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">New Arrival</a>
+        <a href="#">Playlist</a>
+        <a href="#">Discover</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <a href="#" class="login">Log in</a>
+      <a href="#" class="signin">Sign up</a>
+
+      <!-- Toggle Switch -->
+      <label class="toggle-switch">
+        <input type="checkbox" class="checkbox"  />
+        <span class="slider" >90' songs</span>
+      </label>
+    </div>
+  </div>
+  <div class="banner">
+    <p> Rediscover the <br>Golden Age of<br> Sound 
+</p><p class="line"> Step back in time and experience the <br>
+rich, authentic audio from the 60s and <br>
+70s. Our collection brings history to life</p></p>
+<div class="listen">
+<a href="#" class="listening">start listening →</a></div>
+<img  class="banner1" src="Vyjanthimala 1.png">
+  </div>
+  
+  <div class="banner2">
+    <h1>Golden Beats Through The Decades : Only On </h1>
+     <h2>ONE6THREE</h2>    
+     <p class="ban2"> Say goodbye to interruption and enjoy Uninterrupted music streaming with our add-free platform <br>
+your access to millions of songs</p>
+ <div class="slider-container">
+  <div class="cards">
+    <!-- CARD TEMPLATE -->
+    <div class="card">
+      <img src="Madhubala.jpeg.jpg" alt="Jab Pyar Kiya To Darna Kya">
+      <button class="play-button" onclick="togglePlay(this)">
+        ▶
+      </button>
+      <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+      <h4>Jab Pyar Kiya To Darna Kya</h4>
+      <p>Lata Mangeshkar</p>
+      <div class="listens">🎧 436k Listens</div>
+    </div>
+
+    <div class="card">
+      <img src="7a0c1a04d97dc06ac3e4692d9cc08c06_3.jpg" alt="Dum maro dum">
+      <button class="play-button" onclick="togglePlay(this)">▶</button>
+      <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+      <h4>Dum maro dum.</h4>
+      <p>Asha Bhosle</p>
+      <div class="listens">🎧 208k Listens</div>
+    </div>
+
+    <div class="card">
+      <img src="Screenshot 2025-06-17 140607.png" alt="Kaun Aaya">
+      <button class="play-button" onclick="togglePlay(this)">▶</button>
+      <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+      <h4>Kaun Aaya Ki Nigahon Mein</h4>
+      <p>Asha Bhosle</p>
+      <div class="listens">🎧 194k Listens</div>
+    </div>
+<div class="card">
+      <img src="Screenshot 2025-06-17 140416.png" alt="U.P">
+      <button class="play-button" onclick="togglePlay(this)">▶</button>
+      <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+      <h4>U.P wala thumka lagao</h4>
+      <p>sonu nigam</p>
+      <div class="listens">🎧 194k Listens</div>
+    </div>
+    <div class="card">
+      <img src="ab67616d0000b273bf583c2eb3df3188c783e4bb.jpeg.jpg" alt="U.P">
+      <button class="play-button" onclick="togglePlay(this)">▶</button>
+      <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+      <h4>jab hum tum chori se.</h4>
+      <p>lata Mangeshkar</p>
+      <div class="listens">🎧 194k Listens</div>
+    </div>
+    <!-- Add more cards similarly -->
+  </div>
+
+  <div class="nav-container">
+    <button class="nav-arrow" onclick="scrollCards(-1)">←</button>
+    <button class="nav-arrow" onclick="scrollCards(1)">→</button>
+  </div>
+</div>
+<div class="banner3">
+  <h1 class="ban3"> Explore Endless Music Libraries</h1>
+  <p class="bann3"> Say goodbye to interruption and enjoy Uninterrupted music streaming with our add-free<br> 
+platform your access to millions of songs.</p>
+<div class="slide-container">
+  <div class="nav-container">
+    <button class="nav-arrow1" onclick="scrollCards(-1)">←</button>
+    <button class="nav-arrow1" onclick="scrollCards(1)">→</button>
+  </div>
+  <div class="card1"><div class="play"><input type="button" class="bt" href="#"><p class="disco"> DISCO DANCER<p class="songs">♪ 300 Songs</p></p></div>
+</div>
+<div class="card2"><div class="play2"><input type="button" class="bt2" href="#"><p class="disco"> RETRO RAGA<p class="songs">♪ 540 Songs</p></p></div>
+</div>
+<div class="card3"><div class="play3"><input type="button" class="bt3" href="#"><p class="disco"> Classic<p class="songs">♪ 340 Songs</p></p></div>
+</div>
+<div class="card4"><div class="play4"><input type="button" class="bt4" href="#"><p class="disco"> 90's Hits<p class="songs">♪ 340 Songs</p></p></div>
+</div>
+
+</div>
+<div class="banner4">
+<h1 class="ban4"> Trending Artist</h1>
+<p class="bann4">  Discover the classic and most popular artist in the industry today. Keep your music library fresh and <br>
+upto date with our curated selection of trending musicians, bands, and singers. From emerging talent<br> 
+to established star, we've you covered.</p>
+<div class="container">
+    <div class="card11">
+      <img src="lata magesh.jpeg.jpg" alt="Lata Mangeshkar">
+      <h3>Lata Mangeshkar</h3>
+      <p>500+ Songs</p>
+      <a href="#">Explore <span>→</span></a>
+    </div>
+    <div class="card11">
+      <img src="geeta adtt.jpeg.jpg" alt="Geeta Datt">
+      <h3>Geeta Datt</h3>
+      <p>100+ Songs</p>
+      <a href="#">Explore <span>→</span></a>
+    </div>
+    <div class="card11">
+      <img src="Kumar-Sanu-Hits-2012-500x500.jpg" alt="Kumar Sanu">
+      <h3>Kumar Sanu</h3>
+      <p>340+ Songs</p>
+      <a href="#">Explore <span>→</span></a>
+    </div>
+    <div class="card11">
+      <img src="data:image/jpeg;base64,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" alt="Hemant Kumar">
+      <h3>Hemant Kumar</h3>
+      <p>234+ Songs</p>
+      <a href="#">Explore <span>→</span></a>
+    </div>
+    <div class="card11">
+      <img src="asha bhosale.jpeg.jpg" alt="Asha Bhosle">
+      <h3>Asha Bhosle</h3>
+      <p>300+ Songs</p>
+      <a href="#">Explore <span>→</span></a>
+    </div>
+  </div>
+  <a href="#" class="b" >See all (1,747)</a>
+</div>
+<div class="banner5">
+  
+  <h6 class="one">Only on ONE6THREE</h6>
+  <h1 class="kishor">Kishor <br>Kumar</h1>
+  <p class="kumar"> Kishore Kumar was a highly versatile Indian singer, <br>
+actor, lyricist, composer, producer, director, and <br>
+screenwriter, best known for his unique playback <br>
+singing style and dynamic stage presence. </p>
+<img src="images-removebg-preview.png" class="im">
+<div class="fresh-beats-container">
+  <div class="fresh-beats-header">
+    <h2>Fresh Beats</h2>
+    <a href="#" class="view-all-link">view all</a>
+  </div>
+  <ul class="track-list">
+    <li class="track-item">
+      <img src="dream girls.jpeg.jpg" alt="Dream girl" class="track-cover">
+      <div class="track-info">
+        <p class="track-title">Dream girl.</p>
+        <p class="track-artist">kishor kumar</p>
+      </div>
+      <span class="track-duration">4:00</span>
+      <button class="track-play-button">▶</button>
+    </li>
+
+    <li class="track-item">
+      <img src="dekha ek khwab toh yee.jpeg.jpg" alt="Dekha ek khwab" class="track-cover">
+      <div class="track-info">
+        <p class="track-title">Dekha ek khwab toh yee.</p>
+        <p class="track-artist">kishor kumar</p>
+      </div>
+      <span class="track-duration">5:23</span>
+      <button class="track-play-button">▶</button>
+    </li>
+
+    <li class="track-item">
+      <img src="chala jata hoon.jpeg.jpg" alt="Jala jata hoon" class="track-cover">
+      <div class="track-info">
+        <p class="track-title">Jala jata hoon.</p>
+        <p class="track-artist">kishor kumar</p>
+      </div>
+      <span class="track-duration">4:34</span>
+      <button class="track-play-button">▶</button>
+    </li>
+
+    <li class="track-item">
+      <img src="oo mere dil ke chain.png" alt="Oo mere dil chain" class="track-cover">
+      <div class="track-info">
+        <p class="track-title">Oo mere dil chain.</p>
+        <p class="track-artist">kishor kumar</p>
+      </div>
+      <span class="track-duration">4:37</span>
+      <button class="track-play-button">▶</button>
+    </li>
+
+    <li class="track-item">
+      <img src="neele neele ambar per.png" alt="Neele neele" class="track-cover">
+      <div class="track-info">
+        <p class="track-title">Neele neele ambar per.</p>
+        <p class="track-artist">kishor kumar</p>
+      </div>
+      <span class="track-duration">5:20</span>
+      <button class="track-play-button">▶</button>
+    </li>
+
+    <li class="track-item">
+      <img src="zindagi ek safar.png" alt="Zindagi ek safar" class="track-cover">
+      <div class="track-info">
+        <p class="track-title">Zindagi ek safar suhana</p>
+        <p class="track-artist">kishor kumar</p>
+      </div>
+      <span class="track-duration">4:20</span>
+      <button class="track-play-button">▶</button>
+    </li>
+  </ul>
+</div><br>
+<div class="banner6">
+<h1 class="stay"> Stay Tuned To <br>
+The Golden <br>
+Groove.</h1>
+<p class="tuned"> Plug into the golden era! From vinyl vibes to cassette <br>
+classics, get exclusive updates on retro hits, rare re<br>
+releases, iconic artist features, and nostalgic events. Sign <br>
+up now and keep the jukebox spinning — don't miss a <br>
+single beat from the decades that defined music.</p>
+<input type="email" placeholder="Email" class="email">
+<button class="to">➤</button>
+<img src="Retro_ gramophone - Marta Tęcza 1.png" class="retro">
+</div>
+<footer class="vb-footer">
+  <div class="vb-footer-top">
+    <div class="vb-logo-section">
+      <h2 class="vb-logo">ONE6THREE</h2>
+      <p class="vb-streaming">Now streaming:<br><strong>Lag ja gale (1964)</strong></p>
+      <div class="vb-wave-icon"> •၊၊||၊|။||||။‌‌‌‌‌၊|• </div>
+    </div>
+
+    <div class="vb-links-section">
+      <div class="vb-column">
+        <h4>Get Started</h4>
+        <ul class="down">
+          <li><a href="#">Download App</a></li>
+          <li><a href="#">New Release</a></li>
+          <li><a href="#">Original</a></li>
+        </ul>
+      </div>
+      <div class="vb-column">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="#">Sign</a></li>
+          <li><a href="#">Platform</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="vb-signup-button">
+        <button>Sign Up</button>
+      </div>
+    </div>
+  </div>
+
+  <hr class="vb-divider" />
+
+  <div class="vb-footer-bottom">
+    <p class="vb-desc">Say Goodbye&nbsp; to interruptions and enjoy uninterrupted music streaming.</p>
+    <div class="vb-footer-end">
+      <span class="vb-copy">© 2025ONE6THREE</span>
+      <div class="vb-socials">
+        <a href="#"><img src="https://img.icons8.com/ios-filled/20/facebook-new.png" alt="Facebook"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/20/instagram-new.png" alt="Instagram"></a>
+        <a href="#"><img src="https://img.icons8.com/ios-filled/20/youtube-play.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let currentAudio = null;
+  function togglePlay(button) {
+    const audio = button.nextElementSibling;
+
+    if (currentAudio && currentAudio !== audio) {
+      currentAudio.pause();
+      const prevBtn = currentAudio.previousElementSibling;
+      prevBtn.textContent = '▶';
+    }
+
+    if (audio.paused) {
+      audio.play();
+      button.textContent = '⏸';
+      currentAudio = audio;
+    } else {
+      audio.pause();
+      button.textContent = '▶';
+      currentAudio = null;
+    }
+
+    audio.onended = () => {
+      button.textContent = '▶';
+      currentAudio = null;
+    };
+  }
+
+  function scrollCards(direction) {
+    const cards = document.querySelector('.cards');
+    cards.scrollBy({ left: direction * 250, behavior: 'smooth' });
+  }
+</script></body>
+</html>
